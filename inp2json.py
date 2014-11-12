@@ -65,8 +65,8 @@ def odbRead(odb, json):
         lists.append(v.data)
 
     json.write('],\n')
-    json.write('"VALMAX":%.2f,\n' % (max(lists)))
-    json.write('"VALMIN":%.2f,\n' % (min(lists)))            
+    json.write('"VALMAX":[%.2f],\n' % (max(lists)))
+    json.write('"VALMIN":[%.2f],\n' % (min(lists)))
 #########################################################
 
         
